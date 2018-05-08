@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- P5 libraries -->
+		<script language="javascript" type="text/javascript" src="p5.js"></script>
+
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script language="javascript" type="text/javascript" src="aframep5.js"></script>
+
+		<!-- P5 Sketch -->
+		<script language="javascript" type="text/javascript" src="sketch1.js"></script>
+
+		<script src="p5.sound.js" type="text/javascript"></script>
+
+		<!-- custom styles -->
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+	    <a-scene id="VRScene">
+
+	    	<!--
+		       The 'a-assets' container is used to load in any external artwork you may want to use as "textures" for your objects.
+		       Ensure that this element has an ID of 'VRAssets'
+
+		       Textures can be loaded by creating a new 'a-asset' tag inside of the 'a-assets' container.
+		       When doing this you will need to make sure to give your textures a unique ID -
+		       this will be used by p5 to create new objects.
+
+		       Example:
+
+		       <img id="ITEM_ID_GOES_HERE" src="images/gold_block.png">
+			-->
+
+			<a-assets id="VRAssets">
+
+				<img src="2.jpg" id="iron">
+				<img src="1.jpg" id="gold">
+				<img src="3.jpg" id="stone">
+				<img src="4.jpg" id="iron1">
+				<img src="5.jpg" id="gold1">
+				<img src="6.jpg" id="stone1">
+				<img src="7.jpg" id="iron2">
+				<img src="8.jpg" id="gold2">
+				<img src="9.jpg" id="stone2">
+				<img src="10.jpg" id="stone3">
+				<img src="11.jpg" id="gold3">
+				<img src="12.jpg" id="stone4">
+				<img src="13.jpg" id="stone5">
+				<img src="14.jpg" id="gold4">
+				<img src="15.jpg" id="stone6">
+				<img src="16.jpg" id="stone7">
+				<img src="17.jpg" id="stone8">
+				<img src="18.jpg" id="stone9">
+				<img src="19.jpg" id="stone10">
+				<img src="20.jpg" id="stone11">
+
+
+				<img src="whitesilk.jpg" id="sky1"></a-assets>
+				<!-- <img src="starrynight1.jpg" id="sky2"></a-assets> -->
+				<img src="night3.png" id="sky3"></a-assets>
+
+
+					<a-sky id="theSky" src="#sky1" color="rgb(255,255,255)"></a-sky>
+
+			</a-assets>
+
+
+	    </a-scene>
+
+	</body>
+</html>
